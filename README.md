@@ -24,5 +24,6 @@ This project provides a simple command-line interface for interacting with OpenA
 ## How it works
 
 - The script uses OpenAI's GPT-4 to generate responses based on user input.
+- AI references previous messages.
 - An animated spinner appears while pending the GPT-4 response.
 - The conversation is saved to a text file on the user's desktop with a timestamp to ensure unique filenames for each session.
