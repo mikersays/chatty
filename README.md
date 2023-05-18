@@ -5,7 +5,8 @@ This project provides a simple command-line interface for interacting with OpenA
 ## Prerequisites
 
 - Python 3.6 or higher
-- OpenAI Python library: Install using `pip install openai`. If this doesn't work, try `pip3 install openai`
+- OpenAI Python library: Install using `pip install openai`.
+-- If this doesn't work, try `pip3 install openai`
 - OpenAI API key (and access to GPT-4)
 
 ## Setup
