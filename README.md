@@ -1,6 +1,6 @@
 # Simple GPT-4 Chatbot
 
-This project provides a simple command-line interface for interacting with OpenAI's GPT-4 model. It includes a spinning cursor animation to indicate that the AI is processing your input and saves the conversation to a text file on your desktop.
+This project provides a simple command-line interface for interacting with OpenAI's GPT-4 model. It references previous messages to continue conversations.
 
 ## Prerequisites
 
