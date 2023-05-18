@@ -6,11 +6,12 @@ This project provides a simple command-line interface for interacting with OpenA
 
 - Python 3.6 or higher
 - OpenAI Python library: Install using `pip install openai`
+- GPT-4 API key
 
 ## Setup
 
 1. Clone this repository or copy the code into a new file named `chatty.py`.
-2. Obtain an API key from OpenAI and replace `<API token>` in the code with your API key.
+2. Obtain an API key from OpenAI and replace `<API key>` in the code with your API key.
 3. If needed, replace `"gpt-4"` in the `generate_response` function with the appropriate model name.
 
 ## Usage
