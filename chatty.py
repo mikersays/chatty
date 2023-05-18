@@ -5,7 +5,7 @@ import threading
 import os
 from datetime import datetime
 
-# Set up your API key. Replace the entire <API key> string with your API key.
+# Set up your API key. Replace the entire <API key> string with your OpenAI API key.
 openai.api_key = "<API key>"
 
 # Function to generate a response using GPT-4
