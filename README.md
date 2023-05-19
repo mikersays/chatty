@@ -12,7 +12,6 @@ This project provides a simple command-line interface for interacting with OpenA
 
 1. Clone this repository or copy the code into a new file named `chatty.py`.
 2. Obtain an API key from OpenAI and replace `<API key>` in the code with your API key.
-3. If needed, replace `"gpt-4"` in the `generate_response` function with the appropriate model name.
 
 ## Usage
 
@@ -25,5 +24,5 @@ This project provides a simple command-line interface for interacting with OpenA
 
 - The script uses OpenAI's GPT-4 to generate responses based on user input.
 - AI references previous messages.
-- An animated spinner appears while pending the GPT-4 response.
+- An animated spinner appears while pending the AI response.
 - The conversation is saved to a text file on the user's desktop with a timestamp to ensure unique filenames for each session.
