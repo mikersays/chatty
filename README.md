@@ -30,7 +30,8 @@ This project provides a simple command-line interface for interacting with OpenA
 
 ## FAQ
 
-Q: How do I view markdown?
+Q: How do I view a markdown file?
+
 A: Download Visual Code Studio. Launch the markdown file and click the `Open Preview to the Side` button. A more readable format should appear in the right pane.
 
 ## Tinkering Notes
