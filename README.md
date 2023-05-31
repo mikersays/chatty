@@ -28,6 +28,11 @@ This project provides a simple command-line interface for interacting with OpenA
 - An animated spinner appears while pending the AI response.
 - When the user inputs `q` to quit, the conversation saves to a markdown file on the user's desktop.
 
+## FAQ
+
+Q: How do I view markdown?
+A: Download Visual Code Studio. Launch the markdown file and click the `Open Preview to the Side` button. A more readable format should appear in the right pane.
+
 ## Tinkering Notes
 
 Adjust values according to your preferences.
