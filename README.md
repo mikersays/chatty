@@ -26,7 +26,7 @@ This project provides a simple command-line interface for interacting with OpenA
 - The script uses OpenAI's GPT-4 to generate responses based on user input.
 - AI references previous messages within the same session.
 - An animated spinner appears while pending the AI response.
-- When the user inputs `q` to quit, the conversation saves to a markdown file on the user's desktop with a timestamp to output unique filenames for each session.
+- When the user inputs `q` to quit, the conversation saves to a markdown file on the user's desktop with a timestamped file name.
 
 ## Tinkering Notes
 
