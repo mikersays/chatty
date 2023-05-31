@@ -5,7 +5,8 @@ This project provides a simple command-line interface for interacting with OpenA
 ## Prerequisites
 
 - Python 3.6 or higher
-- OpenAI Python library: Install using `pip install openai`. If this doesn't work, try `pip3 install openai`
+- OpenAI Python library: Install using `pip install openai`.
+  - If this doesn't work, try `pip3 install openai`
 - OpenAI API key (and access to GPT-4)
 
 ## Setup
@@ -15,10 +16,11 @@ This project provides a simple command-line interface for interacting with OpenA
 
 ## Usage
 
-1. Run the chatbot script in your terminal with the command `python chatty.py`. If this doesn't work, try `python3 chatty.py`.
-2. Type your questions or statements and press Enter to get a response from the AI.
-3. To end the conversation, type `q` and press Enter.
-4. The chatbot conversation will be saved as a text file named `chat_output_<current date and time>.txt` on your desktop.
+1. Run the chatbot script in your terminal with the command `python chatty.py`.
+  - If this doesn't work, try `python3 chatty.py`.
+3. Type your questions or statements and press Enter to get a response from the AI.
+4. To end the conversation, type `q` and press Enter.
+5. The chatbot conversation will be saved as a text file named `chat_output_<current date and time>.txt` on your desktop.
 
 ## How it works
 
