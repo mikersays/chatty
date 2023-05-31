@@ -26,3 +26,9 @@ This project provides a simple command-line interface for interacting with OpenA
 - AI references previous messages within the same session.
 - An animated spinner appears while pending the AI response.
 - When the user inputs `q` to quit, the conversation saves to a markdown file on the user's desktop with a timestamp to output unique filenames for each session.
+
+## Tinkering Notes
+
+Adjust values according to your preferences.
+
+By default, `max_tokens=1500` and `temperature=1`.
