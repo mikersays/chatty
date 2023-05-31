@@ -53,29 +53,30 @@ def get_desktop_path():
 
 # Main function to start the chatbot
 def chatbot():
-    print("Welcome to the GPT-4 Chatbot! Type 'quit' to exit.")
+    print("Ask me anything! Type 'q' to exit.")
+    print("----------------------------------")
     user_input = ""
 
     # Prepare the output file
     desktop_path = get_desktop_path()
     current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    output_filename = f"chat_output_{current_time}.txt"
+    output_filename = f"chat_output_{current_time}.md"  # Changed the file extension to ".md"
     output_file_path = os.path.join(desktop_path, output_filename)
 
     messages = [{"role": "system", "content": "You are a helpful assistant."}]
 
     with open(output_file_path, "w") as output_file:
-        while user_input.lower() != "quit":
+        while user_input.lower() != "q":
             user_input = input("User: ")
 
-            if user_input.lower() != "quit":
-                output_file.write(f"User: {user_input}\n")
+            if user_input.lower() != "q":
+                output_file.write(f"User: {user_input}\n\n")  # Added an extra line
 
                 print("AI: ", end="", flush=True)
                 response = call_gpt_with_spinner(user_input, messages)
                 print(response)
 
-                output_file.write(f"AI: {response}\n")
+                output_file.write(f"AI: {response}\n\n")  # Added an extra line
 
     print(f"Chatbot conversation saved to: {output_file_path}")
 
