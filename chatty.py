@@ -63,6 +63,7 @@ def chatbot():
     output_filename = f"chat_output_{current_time}.md"  # Changed the file extension to ".md"
     output_file_path = os.path.join(desktop_path, output_filename)
 
+    # Define Chatty's role or persona
     messages = [{"role": "system", "content": "You are a helpful assistant."}]
 
     with open(output_file_path, "w") as output_file:
