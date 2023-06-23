@@ -60,7 +60,7 @@ def chatbot():
     # Prepare the output file
     desktop_path = get_desktop_path()
     current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    output_filename = f"chat_output_{current_time}.md"  # Changed the file extension to ".md"
+    output_filename = f"chat_output_{current_time}.md"
     output_file_path = os.path.join(desktop_path, output_filename)
 
     # Define Chatty's role or persona
