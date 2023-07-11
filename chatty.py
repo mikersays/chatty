@@ -9,10 +9,10 @@ from datetime import datetime
 openai.api_key = "<API key>"
 
 # Function to generate a response using GPT-4
-def generate_response(prompt, messages, max_tokens=1500, temperature=1):
+def generate_response(prompt, messages, max_tokens=32768, temperature=1):
     messages.append({"role": "user", "content": prompt})
     response = openai.ChatCompletion.create(
-        model="gpt-4-0613",
+        model="gpt-4-32k-0613",
         messages=messages,
         max_tokens=max_tokens,
         temperature=temperature,
