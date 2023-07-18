@@ -4,15 +4,22 @@ import time
 import threading
 import os
 from datetime import datetime
+import platform  # To determine the OS
+
+# Use readline for Unix-based systems, pyreadline for Windows
+if platform.system() == 'Windows':
+    import pyreadline as readline
+else:
+    import readline
 
 # Set up your API key. Replace the entire <API key> string with your OpenAI API key.
 openai.api_key = "<API key>"
 
 # Function to generate a response using GPT-4
-def generate_response(prompt, messages, max_tokens=32768, temperature=1):
+def generate_response(prompt, messages, max_tokens=1500, temperature=1):
     messages.append({"role": "user", "content": prompt})
     response = openai.ChatCompletion.create(
-        model="gpt-4-32k-0613",
+        model="gpt-4-0613",
         messages=messages,
         max_tokens=max_tokens,
         temperature=temperature,
@@ -60,15 +67,14 @@ def chatbot():
     # Prepare the output file
     desktop_path = get_desktop_path()
     current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
-    output_filename = f"chat_output_{current_time}.md"
+    output_filename = f"chat_output_{current_time}.md"  # Changed the file extension to ".md"
     output_file_path = os.path.join(desktop_path, output_filename)
 
-    # Define Chatty's role or persona
     messages = [{"role": "system", "content": "You are a helpful assistant."}]
 
     with open(output_file_path, "w") as output_file:
         while user_input.lower() != "q":
-            user_input = input("User: ")
+            user_input = input("User: ")  # Replace this line
 
             if user_input.lower() != "q":
                 output_file.write(f"User: {user_input}\n\n")  # Added an extra line
