@@ -16,7 +16,7 @@ else:
 openai.api_key = "<API key>"
 
 # Function to generate a response using GPT-4
-def generate_response(prompt, messages, max_tokens=1500, temperature=1):
+def generate_response(prompt, messages, max_tokens=5000, temperature=1):
     messages.append({"role": "user", "content": prompt})
     response = openai.ChatCompletion.create(
         model="gpt-4-0613",
