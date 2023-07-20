@@ -13,15 +13,15 @@ This project provides a simple command-line interface for interacting with OpenA
 
 ## Setup
 
-1. Clone this repository or copy the code into a new file named `chatty.py`.
-2. Obtain an API key from OpenAI and replace `<API key>` in the `chatty.py` code with your API key.
+1. Clone this repository or copy the code into a new file named `chattyCLI.py`.
+2. Obtain an API key from OpenAI and replace `<API key>` in the `chattyCLI.py` code with your API key.
 
 ## Usage
 
-1. Run the chatbot script in your terminal with the command `python chatty.py`. If this doesn't work, try `python3 chatty.py`.
+1. Run the chatbot script in your terminal with the command `python chattyCLI.py`. If this doesn't work, try `python3 chatty.py`.
 2. Type your questions or statements and press Enter to get a response from the AI.
 3. To end the conversation, type `q` and press Enter.
-4. The chatbot conversation will be saved as a text file named `chat_output_<current date and time>.txt` on your desktop.
+4. The chatbot conversation will be saved as a markdown file named `chat_output_<current date and time>.md` on your desktop.
 
 ## How it works
 
