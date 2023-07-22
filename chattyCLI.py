@@ -58,6 +58,12 @@ def call_gpt_with_spinner(prompt, messages):
 def get_desktop_path():
     return os.path.join(os.path.expanduser("~"), "Desktop")
 
+# Function to read the instruction from an external file
+def read_instruction_from_file(file_path):
+    with open(file_path, "r") as file:
+        instruction = file.read().strip()
+    return instruction
+
 # Main function to start the chatbot
 def chatbot():
     print("Ask me anything! Type 'q' to exit.")
@@ -70,8 +76,9 @@ def chatbot():
     output_filename = f"chat_output_{current_time}.md"  # Changed the file extension to ".md"
     output_file_path = os.path.join(desktop_path, output_filename)
 
-    messages = [{"role": "system", "content": "You are a helpful assistant."}]
-
+    system_instruction = read_instruction_from_file("AIpersona.txt")
+    messages = [{"role": "system", "content": system_instruction}]
+    
     with open(output_file_path, "w") as output_file:
         while user_input.lower() != "q":
             user_input = input("User: ")  # Replace this line
