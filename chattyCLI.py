@@ -86,7 +86,7 @@ def chatbot():
             if user_input.lower() != "q":
                 output_file.write(f"User: {user_input}\n\n")  # Added an extra line
 
-                print("AI: ", end="", flush=True)
+                print("AI: ", end=" ", flush=True)  # Modified this line
                 response = call_gpt_with_spinner(user_input, messages)
                 print(response)
 
